@@ -1,1 +1,1 @@
-#Wheat Blog
+#Wheat7 Blog
