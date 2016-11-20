@@ -9,6 +9,7 @@ twitter_username: wheatseven
 github_username:  wheat7
 facebook_username:  Wheat Steven
 email_username:  7wheat@gmail.com
+baseurl: ""
 
 # Google Analytics
 # To enable google analytics, uncomment below line with a valid Google Tracking ID
