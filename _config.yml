@@ -16,9 +16,8 @@ baseurl: ""
 # google_tracking_id:
 
 # Build settings
-gems: [jekyll-paginate]
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
-paginate: 10
+paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
