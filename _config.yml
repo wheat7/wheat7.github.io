@@ -16,11 +16,11 @@ baseurl: ""
 # google_tracking_id:
 
 # Build settings
+gems: [jekyll-paginate, jekyll-feed]
 markdown: kramdown
-kramdown:
-  input: GFM    
 highlighter: rouge
 permalink: pretty
 paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
-anchorjs: true 
+kramdown:
+  input: GFM    
