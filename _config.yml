@@ -16,19 +16,6 @@ baseurl: ""
 # google_tracking_id:
 
 # Build settings
-markdown: kramdown
-highlighter: rouge
-permalink: pretty
-paginate: 5
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-gems: [jekyll-paginate, jekyll-feed]
-kramdown:
-  input: GFM
-  extensions:
-    - autolink
-    - footnotes
-    - smart
-  use_coderay: true
-  syntax_highlighter: rouge
-  coderay:
-    coderay_line_numbers:  nil
+markdown: redcarpet
+redcarpet:
+    extensions: [ "fenced_code_blocks", "hard_wrap","autolink", "tables", "strikethrough", "superscript", "with_toc_data", "highlight", "prettify","no_intra_emphasis"]
