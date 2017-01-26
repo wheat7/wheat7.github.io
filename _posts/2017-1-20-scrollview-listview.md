@@ -14,19 +14,22 @@ header-img: "img/post-bg-01.jpg"
 ## 通过重写Listview的onMeasure方法实现动态计算ListView的高度
 在ScrollView 嵌套 ListView时，如果将Listview的高度写死，保证数据填充后的高度不大于设置的高度，冲突就解决了，但是如果设置的高度大于数据填充后的高度，就会有留白。通过重写Listview的onMeasure方法实现动态计算ListView的高度。  
 
-### 新建一个ScrollListView（类名自拟）类继承Listview              
+### 新建一个ScrollListView（类名自拟）类继承Listview 
+
 ```
 public class ScrollListView extends ListView{
 }
 ```
-### 重写onMeasure方法       
+### 重写onMeasure方法    
+
 ```
-	@Override
-	protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-		int expandSpec = MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE >> 2, MeasureSpec.AT_MOST);
-		super.onMeasure(widthMeasureSpec, expandSpec);
+@Override
+protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+    int expandSpec = MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE >> 2, MeasureSpec.AT_MOST);
+    super.onMeasure(widthMeasureSpec, expandSpec);
 	}
 ```
+
 具体实现我们在这里不作了解了，毕竟官方也不建议使用。     
 
 ### 完整代码如下          
