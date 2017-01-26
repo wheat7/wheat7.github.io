@@ -4,7 +4,6 @@ title:      "<Android>ScrollView 嵌套 ListView 的简单解决方案"
 date:       2017-1-25 15:30:00   
 author:     "Wheat7"        
 header-img: "img/post-bg-01.jpg"
-
 ---
 
 # <Android>ScrollView 嵌套 ListView 的简单解决方案
@@ -100,6 +99,7 @@ public class ScrollListView extends ListView {
 ```
 
 ### 在类里添加的时候，也要new ScrollListView 而不是ListView
+
 ```
 private ScrollListView scrollListView;
 scrollListView = (ScrollListView) findViewById (R.id.scrollListView);
@@ -109,7 +109,3 @@ scrollListView = (ScrollListView) findViewById (R.id.scrollListView);
 * 这个方法可以解决一些简单的问题和冲突，但是建立在损失性能上的，嵌套多个ListView的时候，还是会出现闪屏，计算错误的问题。     
 * 还有其他的方法，大家可以自己试一下，如果有更好的解决方案，可以给我留言，我无耻的嵌网页了233.。
 * 官方不建议使用
-
-
-
-
