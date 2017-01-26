@@ -7,7 +7,7 @@ header-img: "img/post-bg-01.jpg"
 
 ---
 
-# ScrollView 嵌套 ListView 的简单解决方案
+# <Android>ScrollView 嵌套 ListView 的简单解决方案
 
 最近在做一个项目的时候，有一个功能需要大量的信息展示，包括字符串信息、图片、附件链接，客户想要在一个界面展示，于是我尝试了在ScrollView 嵌套 ListView，最后还是由于图片过大出现了问题，最后嵌了网页233。。其间研究了一下解决ScrollView 嵌套 ListView冲突的一些方法，选了最简单的一个，在这详细的演示一遍。            
 说明：**Google不建议在ScrollView中嵌套ListView**
