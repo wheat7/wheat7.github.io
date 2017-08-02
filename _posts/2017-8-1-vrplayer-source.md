@@ -1,19 +1,22 @@
 ---
 layout:     post   
 title:      "VRPlayer源码分析"     
-date:       2017-6-8 15:33:00   
+date:       2017-8-1 15:30:00   
 author:     "Wheat7"        
 header-img: "img/post-bg-01.jpg"
 --- 
 
 # [项目地址](https://github.com/wheat7/VRPlayer)
+
 # [我的博客](http://wheat7.com)
+
 # 简介
 VRPlayer是一个本地VR视频播放器，整体使用了  DataBinding，MVVM架构，播放部分基于IJKPlayer，VR渲染部分基于MD360Player4Android,UI上部分使用了Carbon，沉浸式状态栏使用了 StatusBarUtil这个项目，图片加载使用 Glide      
 VRPlayer会扫描你手机中的视频文件，然后你可以找到你要播放的VR视频文件，点击即可播放
 # 效果
-![](http://ogzwf5uv0.bkt.clouddn.com/vr1.gif)           
-![](http://ogzwf5uv0.bkt.clouddn.com/vr2.gif)    
+
+![](http://ogzwf5uv0.bkt.clouddn.com/1vr.gif)           
+![](http://ogzwf5uv0.bkt.clouddn.com/2vr.gif)    
 
 # 分析
 项目主要分三部分,一是重写的MediaController，二就是播放器的包装类，也相当于我们的原生的VideoView,源码中为PlayerView,最后一部分将PlayerView和MD360Player库中的VRLibrary整合包装，也就是源码中的VRPlayerView，实现VR模式控制的接口，在使用的时候就只需要添加这一个View
@@ -381,6 +384,7 @@ PlayerView就类似于原生的VideoView，准确的说，就是从ViedoView修�
             player.setOption(IjkMediaPlayer.OPT_CATEGORY_CODEC, "skip_loop_filter", 48);
         }
     }
+    
 ```
 
 然后在mMediaPlayer创建以后调用enableHardwareDecoding()即可
@@ -627,6 +631,9 @@ public abstract class BaseActivity<T extends ViewDataBinding> extends AppCompatA
 
 ## 其他
 项目还包括一些其他的东西，包括Databinding的ViewHolder、欢迎界面的闪动TextView、沉浸式状态栏工具类StatusBarUtil的使用等，就不作赘述了，详见源码，如果有要和我讨论的同学，可以联系我哦
+
+## 最后
+最后恳请同学们不吝惜的给一个Star，这对于我很重要！谢谢！
 
 
 
