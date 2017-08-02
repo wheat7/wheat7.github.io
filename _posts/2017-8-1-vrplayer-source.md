@@ -189,6 +189,9 @@ private void initFloatingWindow() {
 </LinearLayout>
 ```
 
+效果是这样的     
+![](http://ogzwf5uv0.bkt.clouddn.com/3.png)
+
 最后两个ImageView是我们VR控制的部分，后边要编写对应的接口
 
 * 初始化Controller
