@@ -1,3 +1,11 @@
+---
+layout:     post   
+title:      "通过点击事件监听setOnClickListener彻底理解回调"     
+date:       2017-8-2 12:40:00   
+author:     "Wheat7"        
+header-img: "img/post-bg-01.jpg"
+--- 
+
 ### [个人小站](http://wheat7.com/)
 ### [Github](https://github.com/wheat7)
 ### [简书](http://www.jianshu.com/users/6005415e3069/)

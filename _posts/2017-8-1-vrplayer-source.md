@@ -6,9 +6,13 @@ author:     "Wheat7"
 header-img: "img/post-bg-01.jpg"
 --- 
 
+### [个人小站](http://wheat7.com/)
+### [Github](https://github.com/wheat7)
+### [简书](http://www.jianshu.com/users/6005415e3069/)
+
 # [项目地址](https://github.com/wheat7/VRPlayer)
 
-# [我的博客](http://wheat7.com)
+
 
 # 简介
 VRPlayer是一个本地VR视频播放器，整体使用了  DataBinding，MVVM架构，播放部分基于IJKPlayer，VR渲染部分基于MD360Player4Android,UI上部分使用了Carbon，沉浸式状态栏使用了 StatusBarUtil这个项目，图片加载使用 Glide      
