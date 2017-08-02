@@ -1,6 +1,6 @@
 ---
 layout:     post   
-title:      "VRPlayer源码分析"     
+title:      "从零开始打造一个VR视频播放器-VRPlayer源码分析"     
 date:       2017-8-1 15:30:00   
 author:     "Wheat7"        
 header-img: "img/post-bg-01.jpg"
